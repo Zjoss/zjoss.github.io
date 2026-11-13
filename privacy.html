@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Heavens Door accesses, uses, stores, and shares data, including Google Sheets data.">
+  <title>Privacy Policy — Heavens Door</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="Heavens Door home"><span class="brand-mark" aria-hidden="true">H</span>Heavens Door</a>
+    <nav aria-label="Main navigation"><a href="./">About the App</a><a href="mailto:faustt422@gmail.com">Support</a></nav>
+  </header>
+  <main class="wrap policy">
+    <p class="eyebrow">Data handling</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: November 13, 2026</p>
+    <p class="lead">This policy explains how Heavens Door handles user materials and the optional Google Sheets connection in the local Windows version.</p>
+    <section><h2>1. Data the app processes</h2>
+      <p>The app stores materials you enter or import, including course descriptions, prices, dates, notes, proposal text, and settings.</p>
+      <p>When you connect Google, the app processes OAuth client configuration and access tokens. You enter your Google password on Google's own sign-in page; the app does not receive it. When you configure sources, the app processes spreadsheet and sheet IDs, names and structure, range addresses, lookup and row-validation values, retrieved prices, update times, and error information.</p>
+      <p>The app uses the <code>https://www.googleapis.com/auth/spreadsheets.readonly</code> permission. It allows reading spreadsheets available to your account and does not allow changing them. The app's code accesses the sources you configure and does not perform a general search across all documents in your account.</p>
+    </section>
+    <section><h2>2. How data is used</h2>
+      <p>Data is used to display working materials, link prices to courses, validate sources, update prices, and prepare proposals. Connecting Google is optional; manually entered prices are stored separately from spreadsheet values.</p>
+      <p>Tokens are used to make Google requests you authorize and to refresh access. The app does not use spreadsheet data for advertising, sell it, or use it to train AI models itself.</p>
+    </section>
+    <section><h2>3. Where data is stored</h2>
+      <p>In the local version, materials, source settings, and the latest retrieved prices are stored in the app's database on your computer. The app does not encrypt this database. OAuth tokens and connection configuration are stored separately and protected with Windows DPAPI for the current Windows user; they are not included in material exports.</p>
+      <p>An exported full backup may contain materials, source settings, and retrieved prices. You choose where to store these files and with whom to share them.</p>
+      <p>If you transfer materials to the separately used web version, they may be stored in its Cloudflare D1 server database. Access to the web version is governed by its owner's settings. The app information page and this policy do not, by themselves, provide access to working materials.</p>
+    </section>
+    <section><h2>4. When data is shared with other services</h2>
+      <p>During authorization and price retrieval, the app connects to Google over HTTPS. Local price synchronization does not use a separate developer-operated server.</p>
+      <p>If you separately configure the AI assistant and start generation, the generated request may include selected materials, your text, and current prices, including prices retrieved from Google Sheets. The request is sent to your selected AI provider: OpenAI, Google Gemini, Anthropic, or DeepSeek. The Gemini connection uses a configured Cloudflare proxy, which also processes the request. This transfer supports text preparation and is not needed for price updates.</p>
+      <p>External services have their own data processing and retention terms. The app does not impose a single retention or request-use policy on all of these services. You can choose not to connect the AI assistant.</p>
+      <p>Materials may also be shared when you export them, exchange files, or transfer them to the web version. Google data is not sold or shared with advertising networks.</p>
+    </section>
+    <section><h2>5. Disconnection, retention, and deletion</h2>
+      <p>Turning off Google prices restores the use of manually entered prices while keeping source settings and cached data. Disconnecting the Google account deletes local tokens while retaining OAuth client configuration. To revoke permission on Google's side, visit your <a href="https://myaccount.google.com/connections">Google Account connections</a>.</p>
+      <p>Deleting a price-source mapping removes its current settings and cached data. Previously saved values may remain in version history and backups. There is no single automatic deletion period for all materials and copies: they are retained until you delete the corresponding data, files, or storage. Disconnecting Google does not delete previously exported backups.</p>
+      <p>For data requests or help with deletion, email <a href="mailto:faustt422@gmail.com">faustt422@gmail.com</a>. Do not send OAuth tokens, keys, or the contents of other people's spreadsheets to support without permission.</p>
+    </section>
+    <section><h2>6. These information pages</h2>
+      <p>The code for these pages does not include analytics, advertising tools, data collection forms, or third-party fonts. When hosted on GitHub Pages, the hosting service may process technical visit information, including IP addresses, under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. If you email support, your sender address and the information you include in your message are processed.</p>
+    </section>
+    <section><h2>7. Updates and contact</h2>
+      <p>This policy is updated when data handling changes; the revision date appears at the top of this page. New uses of Google data that require consent must be accompanied by a separate notice and your consent.</p>
+      <p>For app and privacy questions, contact <a href="mailto:faustt422@gmail.com">faustt422@gmail.com</a>.</p>
+    </section>
+  </main>
+  <footer class="wrap site-footer"><a href="./">Heavens Door · About the App</a><span>Privacy Policy</span></footer>
+</body>
+</html>
